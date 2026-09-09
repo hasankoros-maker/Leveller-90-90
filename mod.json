@@ -1,0 +1,32 @@
+{
+  "geode": "4.0.0",
+  "gd": {
+    "win": "2.2",
+    "android": "2.2",
+    "mac": "2.2"
+  },
+  "id": "leveller.auto-level",
+  "name": "Leveller",
+  "version": "v0.1.0",
+  "developer": "Leveller Team",
+  "description": "Adds a small Leveller button to level cells and provides a safe normal-mode launch point for future automation.",
+  "repository": "",
+  "issues": "",
+  "links": {
+    "homepage": ""
+  },
+  "settings": {
+    "enabled": {
+      "name": "Enable Leveller buttons",
+      "description": "Show the Leveller button next to levels.",
+      "type": "bool",
+      "default": true
+    },
+    "normal-mode-only": {
+      "name": "Normal Mode only",
+      "description": "Do not activate automation from practice mode.",
+      "type": "bool",
+      "default": true
+    }
+  }
+}
