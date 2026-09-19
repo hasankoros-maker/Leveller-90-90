@@ -1,6 +1,6 @@
 # Leveller Geode Mod
 
-Geometry Dash **2.2.144** için Geode mod başlangıcı. Level sayfasında normal oynatma düğmesinin yanında ayrı bir **BOT** düğmesi gösterir.
+Geometry Dash **2.2.144 Android64** için Geode mod başlangıcı. Level sayfasında normal oynatma düğmesinin yanında ayrı bir **BOT** düğmesi gösterir.
 
 ## Mevcut davranış
 

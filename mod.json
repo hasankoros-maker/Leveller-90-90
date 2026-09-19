@@ -7,7 +7,7 @@
   },
   "id": "leveller.auto-level",
   "name": "Leveller",
-  "version": "v0.2.8",
+  "version": "v0.2.9",
   "developer": "Leveller Team",
   "description": "Adds PLAY and BOT controls beside Geometry Dash level buttons for local, normal-mode automation experiments.",
   "repository": "https://github.com/hasankoros-maker/Leveller-90-90",
