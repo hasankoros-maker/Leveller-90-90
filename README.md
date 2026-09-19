@@ -11,7 +11,7 @@ Geometry Dash **2.2.144** için Geode mod başlangıcı. Level sayfasında norma
 
 ## Derleme
 
-Geode SDK 4.0.0 ve Geometry Dash 2.2.144 toolchain'i ile:
+Geode SDK 2.0.0-beta.27 ve Geometry Dash 2.2.144 toolchain'i ile:
 
 ```sh
 geode build

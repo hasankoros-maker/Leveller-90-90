@@ -28,6 +28,7 @@ jobs:
           combine: true
           sdk: given
           cli: latest
+          bindings-ref: 2702254eb336901fae864388c887d820a776d87b
           target: ${{ matrix.config.target }}
 
   package:

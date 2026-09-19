@@ -1,5 +1,5 @@
 {
-  "geode": "4.0.0",
+  "geode": "v2.0.0-beta.27",
   "gd": {
     "win": "2.2.144",
     "android": "2.2.144",
@@ -7,7 +7,7 @@
   },
   "id": "leveller.auto-level",
   "name": "Leveller",
-  "version": "v0.2.6",
+  "version": "v0.2.7",
   "developer": "Leveller Team",
   "description": "Adds PLAY and BOT controls beside Geometry Dash level buttons for local, normal-mode automation experiments.",
   "repository": "https://github.com/hasankoros-maker/Leveller-90-90",
