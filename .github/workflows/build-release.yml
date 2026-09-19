@@ -18,12 +18,6 @@ jobs:
           - name: Windows
             os: windows-latest
             target: Win64
-          - name: macOS
-            os: macos-latest
-            target: MacOS
-          - name: Android64
-            os: ubuntu-latest
-            target: Android64
     name: Build ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
     steps:
