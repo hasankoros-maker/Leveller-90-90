@@ -36,9 +36,7 @@ namespace {
         if (!level) return false;
         auto name = lower(level->m_levelName.c_str());
         static constexpr const char* selected[] = {
-            "detah corridor", "death corridor", "ton 618",
-            "acheron", "slaughterhouse", "silent clubstep",
-            "tidal wave", "avernus"
+            "detah corridor", "death corridor", "ton 618"
         };
         return std::any_of(std::begin(selected), std::end(selected), [&](auto item) {
             return name.find(item) != std::string::npos;

@@ -8,7 +8,7 @@ The source targets Geometry Dash **2.2.144** and Geode 2.0.0-beta.27. Windows, A
 
 ## Automation scope
 
-The bot is deliberately limited to a small, explicit list of difficult levels, including Detah/Death Corridor and Ton 618. It scans nearby solid and hazard objects in `PlayLayer::postUpdate` and emits conservative jump taps. It is an offline heuristic prototype, not a universal solver: ship, wave, dual, portal and tight orb sequences can fail, and completion is not guaranteed.
+The bot is deliberately limited to two explicit difficult levels: Detah/Death Corridor and Ton 618. It scans nearby solid and hazard objects in `PlayLayer::postUpdate` and emits conservative jump taps. It is an offline heuristic prototype, not a universal solver: ship, wave, dual, portal and tight orb sequences can fail, and completion is not guaranteed.
 
 The bot does not use a network service, does not write online scores, and does not alter completion state. Practice mode is excluded.
 

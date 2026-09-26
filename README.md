@@ -8,11 +8,6 @@ Geometry Dash **2.2.144** için Geode mod başlangıcı. Level sayfasında norma
 
 - Detah Corridor / Death Corridor
 - Ton 618
-- Acheron
-- Slaughterhouse
-- Silent Clubstep
-- Tidal Wave
-- Avernus
 
 Bot, level nesnelerini oyun içinden tarayan **yerel ve deneysel bir heuristik analiz** kullanır. Yakındaki tehlike ve katı engellere göre tek karelik zıplama girişleri üretir. Bu, evrensel bir çözücü değildir; tüm seviyeleri bitirme garantisi vermez ve özellikle gemi, wave, dual, portal zincirleri ve hassas orb sekanslarında başarısız olabilir.
 
