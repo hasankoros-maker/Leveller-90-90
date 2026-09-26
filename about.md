@@ -1,14 +1,16 @@
 # Leveller
 
-Leveller adds a small button beside level cells. Pressing it opens the selected level in the game's normal play flow. The project is designed as a cross-platform Geode mod for Geometry Dash 2.2.x.
+Leveller adds a button beside level cells. Pressing **BOT** opens the selected level in the game's normal play flow and enables a local experimental obstacle-analysis controller.
 
 ## Compatibility
 
-The source targets Geometry Dash 2.2 or newer within the 2.2 branch. Windows and Android are the primary targets. The macOS entry is included for Geode-supported desktop builds. Apple/iOS support depends on whether Geode is available for the specific device and launcher; it cannot be guaranteed by a mod manifest alone.
+The source targets Geometry Dash **2.2.144** and Geode 2.0.0-beta.27. Windows, Android64 and macOS are listed in the manifest; Android requires an arm64-v8a device.
 
 ## Automation scope
 
-A universal level-completion bot is not implemented in this starter because it requires version-specific PlayLayer input hooks, object timing/path analysis, and extensive testing. The button and normal-mode launch point are implemented without altering completion state or injecting fake progress.
+The bot is deliberately limited to a small, explicit list of difficult levels, including Detah/Death Corridor and Ton 618. It scans nearby solid and hazard objects in `PlayLayer::postUpdate` and emits conservative jump taps. It is an offline heuristic prototype, not a universal solver: ship, wave, dual, portal and tight orb sequences can fail, and completion is not guaranteed.
+
+The bot does not use a network service, does not write online scores, and does not alter completion state. Practice mode is excluded.
 
 ## Build
 
@@ -18,7 +20,7 @@ Install the Geode SDK/CLI, then run:
 geode build
 ```
 
-For Android:
+For Android64:
 
 ```sh
 geode build -p android64

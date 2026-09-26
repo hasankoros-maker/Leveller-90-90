@@ -1,13 +1,22 @@
 # Leveller Geode Mod
 
-Geometry Dash **2.2.144 Android64** için Geode mod başlangıcı. Level sayfasında normal oynatma düğmesinin yanında ayrı bir **BOT** düğmesi gösterir.
+Geometry Dash **2.2.144** için Geode mod başlangıcı. Level sayfasında normal oynatma düğmesinin yanında ayrı bir **BOT** düğmesi gösterir.
 
-## Mevcut davranış
+## Bot prototipi
 
-- **PLAY** seçili leveli Geometry Dash'in normal oynatma akışıyla açar.
-- **BOT** seçili leveli yerel BOT modu işaretiyle normal oynatma akışında açar.
-- Mod sahte ilerleme, doğrulama atlatma veya çevrimiçi skor yazmaz.
-- Evrensel olarak her leveli kusursuz bitiren bir bot bu sürümde mevcut değildir; böyle bir motor için PlayLayer sürüm hook'ları, obje zamanlaması ve level bazlı test verisi gerekir.
+`BOT` düğmesi yalnızca seçilmiş zor seviyelerde etkinleşir:
+
+- Detah Corridor / Death Corridor
+- Ton 618
+- Acheron
+- Slaughterhouse
+- Silent Clubstep
+- Tidal Wave
+- Avernus
+
+Bot, level nesnelerini oyun içinden tarayan **yerel ve deneysel bir heuristik analiz** kullanır. Yakındaki tehlike ve katı engellere göre tek karelik zıplama girişleri üretir. Bu, evrensel bir çözücü değildir; tüm seviyeleri bitirme garantisi vermez ve özellikle gemi, wave, dual, portal zincirleri ve hassas orb sekanslarında başarısız olabilir.
+
+Bot yalnızca normal modda çalışır; practice mode'da ve seçili liste dışındaki seviyelerde devre dışıdır. `Analysis strength` ayarı ileriye dönük tarama mesafesini 1-5 arasında değiştirir.
 
 ## Derleme
 
@@ -18,6 +27,8 @@ geode build
 geode build -p android64
 ```
 
-## Uyumluluk
+CI, Android64 paketini üretmek üzere yapılandırılmıştır.
 
-Manifest Windows, Android ve macOS için **2.2.144** hedefler. Geode indeksine yayın yapmadan önce her platformda gerçek oyun binary'siyle test edilmelidir.
+## Uyumluluk ve yayın notu
+
+Manifest Windows, Android ve macOS için **2.2.144** hedefler. Android cihazda arm64-v8a gerekir. Geode indeksine gönderilmeden önce gerçek oyunda test edilmelidir; resmi indeks başvurusu yönetici onayına tabidir.

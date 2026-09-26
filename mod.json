@@ -7,9 +7,9 @@
   },
   "id": "leveller.auto-level",
   "name": "Leveller",
-  "version": "v0.3.1",
+  "version": "v0.4.0",
   "developer": "Leveller Team",
-  "description": "Adds PLAY and BOT controls beside Geometry Dash level buttons for local, normal-mode automation experiments.",
+  "description": "Adds an opt-in offline analysis bot for a small list of selected Geometry Dash levels.",
   "repository": "https://github.com/hasankoros-maker/Leveller-90-90",
   "issues": "https://github.com/hasankoros-maker/Leveller-90-90/issues",
   "links": {
@@ -23,6 +23,20 @@
       "description": "Show the PLAY and BOT buttons next to levels.",
       "type": "bool",
       "default": true
+    },
+    "bot-enabled": {
+      "name": "Enable experimental BOT",
+      "description": "Run the local heuristic bot. It is limited to selected levels and normal mode.",
+      "type": "bool",
+      "default": true
+    },
+    "analysis-strength": {
+      "name": "Analysis strength",
+      "description": "How far ahead the offline obstacle scan looks (1-5).",
+      "type": "int",
+      "default": 3,
+      "min": 1,
+      "max": 5
     },
     "normal-mode-only": {
       "name": "Normal Mode only",
